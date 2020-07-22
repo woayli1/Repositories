@@ -27,7 +27,8 @@ public class MainActivity extends AppCompatActivity {
     1. 厂商定制系统的Bug：不同的设备可能会产生相同的ANDROID_ID：9774d56d682e549c。
     2. 厂商定制系统的Bug：有些设备返回的值为null。
     3. 设备差异：对于CDMA设备，ANDROID_ID和TelephonyManager.getDeviceId() 返回相同的值。
-     */
+    * 链接：简书：https://www.jianshu.com/p/59440efa020c
+    */
     /* start */
     public String getAndroid_id() {
         String deviceId = Settings.Secure.getString(getApplicationContext().getContentResolver(), Settings.Secure.ANDROID_ID);
